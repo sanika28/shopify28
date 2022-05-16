@@ -1,5 +1,5 @@
 export default {
     api: {
-        KEY: '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'
+        KEY: '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'
     }
 };
