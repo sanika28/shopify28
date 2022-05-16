@@ -22,13 +22,12 @@ const fetchData = async() => {
       frequency_penalty: 0.0,
       presence_penalty: 0.0,
      };
-     var API_KEY = config.api.KEY;
 
     let res = await fetch(`https://api.openai.com/v1/engines/text-curie-001/completions`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization' : 'Bearer '+API_KEY
+        'Authorization' : 'Bearer '+process.env.REACT_APP_KEY
       },
       body: JSON.stringify(data),
     })
