@@ -1,7 +1,6 @@
 import React,{ useState } from "react"
 import 'bootstrap/dist/css/bootstrap.css';
 import "../src/new.css";
-import config from '../src/config';
 import {Row,Col,Form,Button} from "react-bootstrap";
 
 function App() {
